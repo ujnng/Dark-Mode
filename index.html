@@ -8,16 +8,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<script>
-    
-</script>    
     <div class="container">
         <div class="main">
             <h1>Make Your Eyes Feel Comfortable</h1>
             <p>It would be too bright for your eyes.<br>Let them have a comfy moment using dark mode.</p> 
-            <input type="button" value="Dark Mode" onclick="alert('Dark Mode On')">
-            <input type="button" value="Day Mode" onclick="alert('Day Mode On')">
-
+            <input class="dbutton" type="button" value="Dark Mode" onclick="document.querySelector('body').style.backgroundColor = 'black';">
+            <input class="lbutton" type="button" value="Light Mode" onclick="document.querySelector('body').style.backgroundColor = 'white';">
         </div>   
     </div>    
 </body>

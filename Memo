@@ -9,7 +9,7 @@ Esc 클릭 (console 밑에 보여줌)
 
 javascript data type
 undefined : typeof instance === "undefined"
-Boolean : typeof instance === "boolean"
+Boolean : typeof instance === "boolean" true/false
 Number : typeof instance === "number" 숫자
 String : typeof instance === "string" 문자
 BigInt : typeof instance === "bigint"
@@ -19,3 +19,25 @@ javascript string 검색
 .indexof()
 "1"문자열
 1 숫자열
+
+변수 문자 변환
+var name = 'a';
+"+name+"
+
+javascript select tag by css selector
+document.querySelector(selectors);
+
+javascript element style
+document.getelementbyid("").style.
+
+Comparision Operator & Boolean
+document.write (1===1);
+1===1 왼쪽과 오른쪽 값 같냐? true/false > Boolean이라고 함
+&lt; (less than 1>2)
+
+Conditional statement
+if(true/false) {
+
+} else {
+    
+}
