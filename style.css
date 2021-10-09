@@ -7,6 +7,13 @@
     text-align: center
 }
 
+a {
+    color: olivedrab;
+}
+
+a:hover {
+    color: rgb(4, 69, 95);
+}
 .container .main h1 {
     color: darkgreen;
     font-size: 50px;
@@ -34,4 +41,28 @@
 
 .container .main .lbutton:hover {
     background-color: rgb(2, 41, 15);
+}
+
+.container .main .onoff {
+    border-radius: 10px;
+    border: 0; 
+    padding: 10px;
+    color: pink;
+    background-color: purple;
+}
+
+.container .main .onoff:hover {
+    background-color: white;
+}
+
+.container .main .sbutton {
+    border-radius: 10px;
+    border: 0; 
+    padding: 10px;
+    color: saddlebrown;
+    background-color: darksalmon;
+}
+
+.container .main .sbutton:hover {
+    background-color: white;
 }

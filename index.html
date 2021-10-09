@@ -12,8 +12,32 @@
         <div class="main">
             <h1>Make Your Eyes Feel Comfortable</h1>
             <p>It would be too bright for your eyes.<br>Let them have a comfy moment using dark mode.</p> 
+            <ul></ul>
+            <li><a href="https://www.google.com/search?q=how+to+protect+your+eyesight&hl=ko&sxsrf=AOaemvKlFIs8RWFI9aje7CBIGKcxDerYww%3A1633711611978&ei=-3VgYZ2TO4SpoATH9amABA&ved=0ahUKEwjd_K-CorvzAhWEFIgKHcd6CkAQ4dUDCA8&uact=5&oq=how+to+protect+your+eyesight&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEMsBMgUIABDLATIFCAAQywE6BwgjELADECc6CAgAELADEMsBSgQIQRgBUKIOWIcQYNkSaAFwAHgAgAF4iAHTA5IBAzAuNJgBAKABAcgBCsABAQ&sclient=gws-wiz">How to protect your eyesight</a></li>
+            <li><a href="https://www.google.com/search?q=best+way+to+ruin+your+eyesight&hl=ko&sxsrf=AOaemvK8NzvUnhMOFW7n-8_2KqMWBuOVcw%3A1633711590517&ei=5nVgYcz-Hs3N-QafwaDwDw&ved=0ahUKEwjMiZL4obvzAhXNZt4KHZ8gCP4Q4dUDCA8&uact=5&oq=best+way+to+ruin+your+eyesight&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEB46BwgjELADECc6BwgAELADEB46BwgjELACECdKBAhBGAFQihJYjBRg1hRoAXAAeACAAXaIAdoCkgEDMC4zmAEAoAEByAECwAEB&sclient=gws-wiz">Best way to ruin your eyesight</a></li>
+            <br>
             <input class="dbutton" type="button" value="Dark Mode" onclick="document.querySelector('body').style.backgroundColor = 'black';">
             <input class="lbutton" type="button" value="Light Mode" onclick="document.querySelector('body').style.backgroundColor = 'white';">
+            <input class="onoff" type="button" value="Dark Mode" onclick="
+            if (document.querySelector('.onoff').value === 'Light Mode'){
+                document.querySelector('body').style.backgroundColor = 'white';
+                document.querySelector('.onoff').value = 'Dark Mode';
+            }
+            else  {
+                document.querySelector('body').style.backgroundColor = 'black';
+                document.querySelector('.onoff').value = 'Light Mode';  
+            }">
+
+            <input class="sbutton" type="button" value="Dark Mode" onclick="
+            var target = document.querySelector('body');
+            if (this.value === 'Light Mode'){
+                target.style.backgroundColor = 'white';
+                this.value = 'Dark Mode';
+            }
+            else  {
+                target.style.backgroundColor = 'black';
+                this.value = 'Light Mode';  
+            }">
         </div>   
     </div>    
 </body>
