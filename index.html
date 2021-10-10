@@ -18,14 +18,29 @@
             <br>
             <input class="dbutton" type="button" value="Dark Mode" onclick="document.querySelector('body').style.backgroundColor = 'black';">
             <input class="lbutton" type="button" value="Light Mode" onclick="document.querySelector('body').style.backgroundColor = 'white';">
+            
             <input class="onoff" type="button" value="Dark Mode" onclick="
             if (document.querySelector('.onoff').value === 'Light Mode'){
                 document.querySelector('body').style.backgroundColor = 'white';
                 document.querySelector('.onoff').value = 'Dark Mode';
+            
+            var alist = document.querySelectorAll('a')
+            var i = 0;
+            while (i < alist.length) {
+            alist[i].style.color = 'purple';
+            i = i + 1;
+            }
             }
             else  {
                 document.querySelector('body').style.backgroundColor = 'black';
-                document.querySelector('.onoff').value = 'Light Mode';  
+                document.querySelector('.onoff').value = 'Light Mode'; 
+                
+            var alist = document.querySelectorAll('a')
+            var i = 0;
+            while (i < alist.length) {
+            alist[i].style.color = 'pink';
+            i = i + 1;
+            }
             }">
 
             <input class="sbutton" type="button" value="Dark Mode" onclick="
